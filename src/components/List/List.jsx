@@ -1,8 +1,10 @@
+import ListItem from "../ListItem";
+
 function List({ items }) {
   return (
     <ul>
       {items.map((item) => {
-        return <li key={item._id}>{item.name}</li>;
+        return <ListItem key={item._id} item={item} />;
       })}
     </ul>
   );
