@@ -22,7 +22,7 @@ function Image({ imageFileName, altText }) {
     Xiaomi_MI_A2,
     ZenPhone_5,
   };
-  return <img src={images[image]} alt={altText} />;
+  return <img src={images[image]} alt={altText} width={300} />;
 }
 
 export default Image;

@@ -1,12 +1,10 @@
-import Image from "../Image";
+import { Link } from "react-router-dom";
 function ListItem({ item }) {
   return (
     <li>
-      <h3>{item.name}</h3>
-      <Image
-        imageFileName={item.imageFileName}
-        altText={`a pic of ${item.name}`}
-      />
+      <Link to={`/phone-details/${item._id}`}>
+        <h5>{item.name}</h5>
+      </Link>
     </li>
   );
 }

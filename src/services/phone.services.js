@@ -4,8 +4,8 @@ const getAllPhonesService = () => {
   return service.get("/phones");
 };
 
-const getSinglePhoneDetails = (phoneId) => {
+const getSinglePhoneService = (phoneId) => {
   return service.get(`/phones/${phoneId}`);
 };
 
-export { getAllPhonesService, getSinglePhoneDetails };
+export { getAllPhonesService, getSinglePhoneService };

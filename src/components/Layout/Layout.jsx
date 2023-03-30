@@ -1,5 +1,12 @@
+import Navigation from "../Navigation";
+
 function Layout({ children }) {
-  return <main>{children}</main>;
+  return (
+    <>
+      <Navigation />
+      <main>{children}</main>
+    </>
+  );
 }
 
 export default Layout;
